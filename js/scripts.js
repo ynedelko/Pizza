@@ -19,7 +19,6 @@ Pizza.prototype.pizzaPrice = function() {
 };
 
 function resetFields() {
-
   $("input#Radio1").attr('checked', false);
   $("input#Radio2").attr('checked', false);
   $("input#Radio3").attr('checked', false);

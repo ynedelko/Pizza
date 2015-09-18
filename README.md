@@ -1,20 +1,20 @@
-# _App Name_
+# _Pizza for Veggie Lovers_
 
-##### This app allows you to .....
+##### This app will calculate the price of a pizza order.
 
 #### By _**Yelena Nedelko**_
 
 ## Description
 
-_Users can:_
-
-* _....._
+_Users can place an order for pizza/s and see the final cost. This cost will vary based on size of pizza, number of toppings, and quantity of pizzas. For example: one small pizza with 3 toppings will cost $8, while two large pizzas with 2 toppings will cost $34_
 
 
 ## Technology Used
 * _JavaScript_
 * _JQuery_
+* _Testing through Mocha and Chai_
 
+_To view, clone repo and open pizza.html in browser._
 
 ### Legal
 
