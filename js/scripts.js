@@ -29,6 +29,15 @@ $(document).ready(function() {
 
     var newPizzaOrder = new Pizza (chosenPizzaSize, chosenToppingNumber, inputtedToppingName, chosenPizzaQuantity);
     var newPizzaOrderPrice = newPizzaOrder.pizzaPrice();
-    $("ul#orders").append("<li><span class='place'>" + "Your Price: " + "$" + newPizzaOrderPrice + ".00" + "</span></li>");
+    $("ul#orders").append("<li><span class='place'>" + "Your Price: " + "$" + newPizzaOrderPrice + "</span></li>");
+
+    $(".order").last().click(function() {
+      $("#show-order").show();
+
+      $(".pizza-size").text(newPizzaOrder.pizzaSize);
+      $(".pizza-toppings").text(newPizzaOrder.toppingName);
+      $(".pizza-quantity").text(newPizzaOrder.pizzaQuantity);
+      $(".pizza-price").text(newPizzaOrder.pizzaPrice);
+    });
   });
 });

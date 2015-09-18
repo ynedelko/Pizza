@@ -1,12 +1,12 @@
-#show-order {
+/*#show-order {
   display: none;
-}
+}*/
 
-.place {
+.order {
   cursor: pointer;
 }
 
-.place:hover {
+.order:hover {
   text-decoration: underline;
   color: #f0ad4e;
 }
