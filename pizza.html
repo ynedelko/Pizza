@@ -17,26 +17,27 @@
 
             <div class="radio">
               <h5>1. Pizza size:</h5>
-              <label><input type="radio" name="size-choice" id="Radio1" value="small">Small</label>
-              <br>
-              <label><input type="radio" name="size-choice" id="Radio2" value="medium">Medium</label>
-              <br>
-              <label><input type="radio" name="size-choice" id="Radio3" value="large">Large</label>
-              <br>
+                <label><input type="radio" name="size-choice" id="Radio1" value="small">Small</label>
+                <br>
+                <label><input type="radio" name="size-choice" id="Radio2" value="medium">Medium</label>
+                <br>
+                <label><input type="radio" name="size-choice" id="Radio3" value="large">Large</label>
             </div>
 
             <div class="form-group">
-              <label for="topping-number">2. How many toppings would you like?</label>
+              <h5>2. Toppings:</h5>
+              <label for="topping-number">How many toppings would you like?</label>
               <input type="text" class="form-control" id="topping-number">
 
-              <label for="topping-name">3. Please list those toppings. Your choices are: cheese, mushroom, onion, pineapple, tomato, or surprise!</label>
+              <label for="topping-name">Please list those toppings. Your choices are: cheese, mushroom, onion, pineapple, tomato, or surprise!</label>
               <input type="text" class="form-control" id="topping-name">
 
-              <label for="pizza-quantity">4. How many of these delicious pizzas would you like?</label>
+              <h5>3. Number of Pizzas:</h5>
+              <label for="pizza-quantity">How many of these delicious pizzas would you like?</label>
               <input type="text" class="form-control" id="pizza-quantity">
             </div>
 
-            <button type="submit" class="btn btn-primary">Show me the cost</button>
+            <button type="submit" class="btn btn-primary">Calculate my order, please!</button>
 
           </form>
           <h3></h3>
@@ -46,24 +47,20 @@
          <div class="col-md-4">
           <div id="price-list">
             <h2 class="text-warning">Price</h2>
-
             <h4 class="text-primary">small/medium/large = $5/$10/$15</h4>
             <h4 class="text-primary">toppings: $1 each</h4>
           </div>
-
+         </div>
           <div class="col-md-4">
             <div id="show-order">
               <h2 class="text-warning">Order details</h2>
-
-              <p class="text-primary">size: <span class="pizza-size"></span></p>
-              <p class="text-primary">toppings: <span class="pizza-toppings"></span></p>
-              <p class="text-primary">quantity: <span class="pizza-quantity"></span></p>
-              <p class="text-primary">comes to: $ <span class="pizza-price"></span></p>
+                <p class="text-primary">size: <span class="pizza-size"></span></p>
+                <p class="text-primary">toppings: <span class="pizza-toppings"></span></p>
+                <p class="text-primary">quantity: <span class="pizza-quantity"></span></p>
+                <p class="text-primary">comes to: $ <span class="pizza-price"></span></p>
             </div>
-
-         </div>
+          </div>
        </div>
-      </div>
     </div>
   </body>
 </html>
