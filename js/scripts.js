@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     var newPizzaOrder = new Pizza (chosenPizzaSize, chosenToppingNumber, inputtedToppingName, chosenPizzaQuantity);
     var newPizzaOrderPrice = newPizzaOrder.pizzaPrice();
-    $("ul#orders").append("<li><span class='place'>" + "Your Price: " + "$" + newPizzaOrderPrice + "</span></li>");
+    $("ul#orders").append("<li><h4><span class='order'>" + "Order Price: " + "$" + newPizzaOrderPrice + "</span></h4></li>");
 
     $(".order").last().click(function() {
       $("#show-order").show();
@@ -47,7 +47,7 @@ $(document).ready(function() {
       $(".pizza-size").text(newPizzaOrder.pizzaSize);
       $(".pizza-toppings").text(newPizzaOrder.toppingName);
       $(".pizza-quantity").text(newPizzaOrder.pizzaQuantity);
-      $(".pizza-price").text(newPizzaOrder.pizzaPrice);
+      $(".pizza-price").text(newPizzaOrderPrice);
     });
     resetFields();
   });
