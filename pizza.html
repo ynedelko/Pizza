@@ -9,7 +9,52 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-primary">Pizza! Pizza! Pizza!</h1>
-    </d>
+      <h1 class="text-primary">Pizza for Veggie Lovers</h1>
+       <div class="row">
+        <div class="col-md-8">
+          <h3>Please make your selections</h3>
+          <form id="pizza-order">
+
+            <div class="radio">
+              <h5>1. Pizza size:</h5>
+              <label><input type="radio" name="size-choice" id="Radio1" value="small">Small</label>
+              <br>
+              <label><input type="radio" name="size-choice" id="Radio2" value="medium">Medium</label>
+              <br>
+              <label><input type="radio" name="size-choice" id="Radio3" value="large">Large</label>
+              <br>
+            </div>
+
+            <div class="form-group">
+              <label for="topping-number">2. How many toppings would you like?</label>
+              <input type="text" class="form-control" id="topping-number">
+
+              <label for="topping-name">3. Please list those toppings. Your choices are: cheese, mushroom, onion, pineapple, tomato, or surprise!</label>
+              <input type="text" class="form-control" id="topping-name">
+
+              <label for="pizza-quantity">4. How many of these delicious pizzas would you like?</label>
+              <input type="text" class="form-control" id="pizza-quantity">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Show me the cost</button>
+
+          </form>
+          <h3>Your order:</h3>
+            <ul id="orders">
+            </ul>
+        </div>
+          <div class="col-md-4">
+            <div id="show-place">
+              <h2 class="text-warning"></h2>
+
+              <p class="text-primary">size: <span class=""></span></p>
+              <p class="text-primary">toppings: <span class=""></span></p>
+              <p class="text-primary">quantity: <span class=""></span></p>
+            </div>
+
+         </div>
+       </div>
+      </div>
+    </div>
   </body>
 </html>
