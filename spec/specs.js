@@ -6,8 +6,8 @@ describe('Pizza', function () {
     expect(testPizza.toppingName).to.equal("cheese and mushroom");
     expect(testPizza.pizzaQuantity).to.equal(2);
   });
-  it("calculate the pizza order cost for a small pizza", function () {
+  it("calculate the pizza order cost for a small pizza, considering the number of toppings and quantity of pizzas", function () {
     var testPizza = new Pizza("small", 2, "cheese and mushroom", 2);
-    expect(testPizza.pizzaPrice()).to.equal(5);
+    expect(testPizza.pizzaPrice()).to.equal(14);
   });
 });
