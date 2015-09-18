@@ -18,6 +18,16 @@ Pizza.prototype.pizzaPrice = function() {
     return this.startPrice * this.pizzaQuantity;
 };
 
+function resetFields() {
+
+  $("input#Radio1").attr('checked', false);
+  $("input#Radio2").attr('checked', false);
+  $("input#Radio3").attr('checked', false);
+  $("input#topping-number").val("");
+  $("input#topping-name").val("");
+  $("input#pizza-quantity").val("");
+}
+
 $(document).ready(function() {
   $("form#pizza-order").submit(function(event) {
     event.preventDefault();
@@ -39,5 +49,6 @@ $(document).ready(function() {
       $(".pizza-quantity").text(newPizzaOrder.pizzaQuantity);
       $(".pizza-price").text(newPizzaOrder.pizzaPrice);
     });
+    resetFields();
   });
 });
