@@ -7,8 +7,11 @@ function Pizza(pizzaSize, toppingNumber, toppingName, pizzaQuantity) {
 }
 
 Pizza.prototype.pizzaPrice = function() {
-  if (this.pizzaSize = "small") {
+  if (this.pizzaSize === "small") {
     this.startPrice = this.startPrice + (1 * this.toppingNumber);
+  }
+  else if (this.pizzaSize === "medium") {
+    this.startPrice = 10 + (1 * this.toppingNumber);
   }
   return this.startPrice * this.pizzaQuantity;
 };
