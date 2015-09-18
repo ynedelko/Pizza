@@ -44,6 +44,7 @@ $(document).ready(function() {
       $("#show-order").show();
 
       $(".pizza-size").text(newPizzaOrder.pizzaSize);
+      $(".pizza-topping-number").text(newPizzaOrder.toppingNumber);
       $(".pizza-toppings").text(newPizzaOrder.toppingName);
       $(".pizza-quantity").text(newPizzaOrder.pizzaQuantity);
       $(".pizza-price").text(newPizzaOrderPrice);
