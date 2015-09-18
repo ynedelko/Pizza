@@ -10,8 +10,10 @@ Pizza.prototype.pizzaPrice = function() {
   if (this.pizzaSize === "small") {
     this.startPrice = this.startPrice + (1 * this.toppingNumber);
   }
-  else if (this.pizzaSize === "medium") {
+    else if (this.pizzaSize === "medium") {
     this.startPrice = 10 + (1 * this.toppingNumber);
+  } else {
+    this.startPrice = 15 + (1 * this.toppingNumber);
   }
-  return this.startPrice * this.pizzaQuantity;
+    return this.startPrice * this.pizzaQuantity;
 };

@@ -14,4 +14,8 @@ describe('Pizza', function () {
     var testPizza = new Pizza("medium", 1, "cheese", 3);
     expect(testPizza.pizzaPrice()).to.equal(33);
   });
+  it("calculate the pizza order cost for a large pizza, considering the number of toppings and quantity of pizzas", function () {
+    var testPizza = new Pizza("large", 2, "cheese and mushroom", 5);
+    expect(testPizza.pizzaPrice()).to.equal(85);
+  });
 });
