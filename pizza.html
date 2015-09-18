@@ -9,14 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-primary">Pizza for Veggie Lovers</h1>
+      <center>
+        <h1 class="text-primary">Pizza for Veggie Lovers <img src="public/images/slice.jpg" alt="pizza slice" style="width:100px;height:100px;"></p></h1>
+      </center>
        <div class="row">
-        <div class="col-md-8">
-          <h3>Please make your selections</h3>
+        <div class="col-md-6">
+          <h3 class="text-warning">Please make your selections</h3>
           <form id="pizza-order">
 
             <div class="radio">
-              <h5>1. Pizza size:</h5>
+              <h5 class="text-primary">1. Pizza size:</h5>
                 <label><input type="radio" name="size-choice" id="Radio1" value="small">Small</label>
                 <br>
                 <label><input type="radio" name="size-choice" id="Radio2" value="medium">Medium</label>
@@ -25,14 +27,14 @@
             </div>
 
             <div class="form-group">
-              <h5>2. Toppings:</h5>
+              <h5 class="text-primary">2. Toppings:</h5>
               <label for="topping-number">How many toppings would you like?</label>
               <input type="text" class="form-control" id="topping-number">
 
-              <label for="topping-name">Please list those toppings. Your choices are: cheese, mushroom, onion, pineapple, tomato, or surprise!</label>
+              <label for="topping-name">Please list your toppings. Your choices are: cheese, mushroom, onion, pineapple, tomato, or surprise!</label>
               <input type="text" class="form-control" id="topping-name">
 
-              <h5>3. Number of Pizzas:</h5>
+              <h5 class="text-primary">3. Number of Pizzas:</h5>
               <label for="pizza-quantity">How many of these delicious pizzas would you like?</label>
               <input type="text" class="form-control" id="pizza-quantity">
             </div>
@@ -44,19 +46,20 @@
             <ul id="orders">
             </ul>
         </div>
-         <div class="col-md-4">
+         <div class="col-md-6">
           <div id="price-list">
-            <h2 class="text-warning">Price</h2>
-            <h4 class="text-primary">small/medium/large = $5/$10/$15</h4>
-            <h4 class="text-primary">toppings: $1 each</h4>
+            <h3 class="text-warning">Price</h3>
+            <h4>small/medium/large = $5/$10/$15</h4>
+            <h4>toppings: $1 each</h4>
           </div>
          </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div id="show-order">
-              <h2 class="text-warning">Order details</h2>
+              <h3 class="text-warning">Order details</h3>
                 <p class="text-primary"><span class="pizza-quantity"></span> <span class="pizza-size"></span> pizza/s</p>
                 <p class="text-primary">with <span class="pizza-topping-number"></span> topping/s: <span class="pizza-toppings"></span></p>
                 <p class="text-primary">comes to: $<span class="pizza-price"></span></p>
+                <p><img src="public/images/pizza.jpg" alt="pizza man" style="width:100px;height:100px;"></p>
             </div>
           </div>
        </div>

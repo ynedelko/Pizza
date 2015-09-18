@@ -39,3 +39,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+### Images
+
+Images used for this app were obtained from thenounproject.com. Please see their terms of use for restrictions. https://thenounproject.com/legal/#!terms-of-use Please do not reuse icons without permission from source.
